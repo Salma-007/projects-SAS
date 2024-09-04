@@ -151,6 +151,7 @@ int delete_livre(){
             if(a==1){
                 for (int j=i; j<nombre_livre ;j++){
                     stock[j]=stock[j+1];
+                    nombre_livre--;
                 }
                 printf("livre suprime! \n");
             }}
