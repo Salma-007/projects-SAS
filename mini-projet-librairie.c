@@ -49,7 +49,10 @@ int main() {
                 break;    
             case 5:
                 delete_livre();
-                break;    
+                break;   
+             case 6:
+                total_livre();
+                break;
             case 0:
                 printf("Au revoir !\n");
                 break;
@@ -159,3 +162,11 @@ int delete_livre(){
         
         }
     }
+  
+int total_livre(){
+    int somme=0;
+    for(int i=0; i<nombre_livre; i++){
+        somme+=stock[i].quantite;
+    }
+    printf("le nombre total de livre en stock est : %d \n",somme);
+}
